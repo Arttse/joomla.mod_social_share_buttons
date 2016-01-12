@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="3.2" method="upgrade">
+
+    <name>Social Share Buttons</name>
+    <creationDate>January 2016</creationDate>
+    <author>Nikita «Arttse» Bystrov</author>
+    <authorEmail>arttsesoft@gmail.com</authorEmail>
+
+    <copyright>Copyright (C) 2016 Nikita «Arttse» Bystrov. All rights reserved.</copyright>
+    <license>License GNU General Public License version 3</license>
+    <version>0.1.0-dev</version>
+    <description>MOD_SOCIAL_SHARE_BUTTONS_DESC</description>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_social_share_buttons.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_social_share_buttons.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.mod_social_share_buttons.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.mod_social_share_buttons.sys.ini</language>
+    </languages>
+
+    <files>
+        <folder>tmpl</folder>
+        <filename module="mod_social_share_buttons">mod_social_share_buttons.php</filename>
+        <filename>mod_social_share_buttons.xml</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <config>
+
+        <fields name="params">
+
+            <fieldset name="basic">
+
+
+            </fieldset>
+
+
+            <fieldset name="advanced">
+
+                <field name="layout"
+                       type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="moduleclass_sfx"
+                       type="textarea" rows="3"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field name="cache"
+                       type="list"
+                       default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+
+                </field>
+
+                <field name="cache_time"
+                       type="text"
+                       default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+
+                <field name="cachemode"
+                       type="hidden"
+                       default="static">
+
+                    <option value="static"></option>
+
+                </field>
+
+            </fieldset>
+
+        </fields>
+
+    </config>
+
+</extension>
