@@ -1,0 +1,28 @@
+{
+  "name": "joomla.mod_social_share_buttons",
+  "version": "0.1.0-dev",
+  "description": "Joomla module. Displays social media buttons to share the page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arttse/joomla.mod_social_share_buttons.git"
+  },
+  "author": "Nikita «Arttse» Bystrov",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Arttse/joomla.mod_social_share_buttons/issues"
+  },
+  "homepage": "https://github.com/Arttse/joomla.mod_social_share_buttons#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-zip": "^3.0.2",
+    "run-sequence": "^1.1.5",
+    "xml2json": "^0.9.0"
+  }
+}
