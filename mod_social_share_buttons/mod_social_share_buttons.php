@@ -7,8 +7,6 @@
 
 defined ( '_JEXEC' ) or die;
 
-var_dump($params->get ( 'include_style-min-css', true ));
-
 if ( $params->get ( 'include_style-css', true ) )
 {
     if ( $params->get ( 'include_style-min-css', true ) )
@@ -25,6 +23,13 @@ if ( $params->get ( 'include_font-awesome', true ) )
 {
     JHtml::stylesheet ( 'mod_social_share_buttons/font-awesome.min.css', false, true );
 }
+
+$services = [
+    'facebook'    => 'https://www.facebook.com/sharer.php',
+    'google-plus' => 'https://plus.google.com/share',
+    'twitter'     => 'https://twitter.com/intent/tweet',
+    'vk'          => 'https://vk.com/share.php'
+];
 
 $moduleclass_sfx = htmlspecialchars ( $params->get ( 'moduleclass_sfx' ) );
 
