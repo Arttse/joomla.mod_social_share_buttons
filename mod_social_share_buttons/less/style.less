@@ -1,0 +1,25 @@
+.clearfix() {
+  &:before,
+  &:after {
+    content : " ";
+    display : table;
+  }
+  &:after {
+    clear : both;
+  }
+}
+
+.ss-buttons {
+
+  > ul {
+    .clearfix();
+
+    > li {
+      font-size    : 20px;
+      margin-right : 20px;
+      float        : left;
+    }
+
+  }
+
+}
