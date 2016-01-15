@@ -2,10 +2,19 @@
 
 > Joomla module. Displays social media buttons to share the page.
 
+
 ## Requirements
 
 - Joomla 3.2+
 - PHP >= 5.4
+
+
+## Set of services
+
+- Facebook
+- Google Plus
+- Twitter
+- VK
 
 
 ## License
