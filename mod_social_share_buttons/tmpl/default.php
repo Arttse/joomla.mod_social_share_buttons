@@ -19,15 +19,20 @@ $current_url = JUri::current ();
 
 <div id="ss-buttons-<?= $module->id ?>" class="ss-buttons <?= $moduleclass_sfx ?>">
     <ul>
-        <?php if ( $params->get ( 'facebook', true ) ) : ?>
+        <?php if ( $params->get ( 'vk', true ) ) : ?>
             <li>
-                <a target="_blank" href="<?= $services['facebook'] . '?' . http_build_query ( [ 'url' => $current_url ] ) ?>"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" href="<?= $services['vk'] . '?' . http_build_query (
+                    [
+                        'url'   => $current_url,
+                        'title' => $title
+                    ]
+                ) ?>"><i class="fa fa-vk"></i></a>
             </li>
         <?php endif; ?>
 
-        <?php if ( $params->get ( 'google-plus', true ) ) : ?>
+        <?php if ( $params->get ( 'facebook', true ) ) : ?>
             <li>
-                <a target="_blank" href="<?= $services['google-plus'] . '?' . http_build_query ( [ 'url' => $current_url ] ) ?>"><i class="fa fa-google-plus"></i></a>
+                <a target="_blank" href="<?= $services['facebook'] . '?' . http_build_query ( [ 'url' => $current_url ] ) ?>"><i class="fa fa-facebook"></i></a>
             </li>
         <?php endif; ?>
 
@@ -37,14 +42,9 @@ $current_url = JUri::current ();
             </li>
         <?php endif; ?>
 
-        <?php if ( $params->get ( 'vk', true ) ) : ?>
+        <?php if ( $params->get ( 'google-plus', true ) ) : ?>
             <li>
-                <a target="_blank" href="<?= $services['vk'] . '?' . http_build_query (
-                    [
-                        'url'   => $current_url,
-                        'title' => $title
-                    ]
-                ) ?>"><i class="fa fa-vk"></i></a>
+                <a target="_blank" href="<?= $services['google-plus'] . '?' . http_build_query ( [ 'url' => $current_url ] ) ?>"><i class="fa fa-google-plus"></i></a>
             </li>
         <?php endif; ?>
     </ul>
